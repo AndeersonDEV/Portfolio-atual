@@ -129,3 +129,36 @@ body{
     color: red;
     font-family: var(--fonte-principal);
 }
+.redes{
+    display: flex;
+    column-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+.redes a{
+    text-decoration: none;
+    color: var(--azul);
+}
+.rodape{
+    background-color: var(--azul);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    padding: 1em;
+    text-align: center;
+}
+@media screen and (min-width: 1024px) {
+    .menu-hamburguer{
+        display: none;
+    }
+    .lista-menu{
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        
+        
+    }
+    .menu__link{
+        color: var(--branco);
+    }
+}
