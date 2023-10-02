@@ -146,6 +146,9 @@ body{
     padding: 1em;
     text-align: center;
 }
+.tablet{
+    display: none;
+}
 @media screen and (min-width: 1024px) {
     .menu-hamburguer{
         display: none;
@@ -155,10 +158,138 @@ body{
         position: relative;
         width: 100%;
         background-color: transparent;
-        
-        
     }
     .menu__link{
         color: var(--branco);
+        font-family: var(--fonte-principal);
     }
-}
+    .logo{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        width: 20%;
+    }
+   .cabecalho{
+    margin: 0;
+    height: 15%;
+   }
+   
+   .projetos{
+    width: 99%;
+    margin: 0;
+   }
+   .projetos__imagem{
+    width: 100%;
+   }
+   .projetos__container{
+    margin-bottom: 2em;
+   }
+   .conteudo__projetos{
+    display: grid; 
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+   }
+   .port{
+    grid-area: item1;
+   }
+   .book{
+    grid-area: item2;
+   }
+   .cast{
+    grid-area: item3;
+   }
+   .menu__link:hover{
+    border-bottom: 1px solid #22d4fd;
+   }
+   }
+   
+  @media screen and (min-width: 1728px) {
+    .tablet{
+        width: 10%;
+    }
+    .conteudo__principal{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 5em;
+        margin: 0 5em 5em 5em;
+        align-items: center;
+    }
+    .conteudo_imagem{
+        width: 30%;
+    }
+    .conteudo__descricao{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .redes{
+        justify-content: end;
+        margin-right: 5em;
+    }
+    .conteuto__titulo{
+        font-size: 48px;
+    }
+    .conteudo__subtitulo{
+        font-size: 30px;
+    }
+    .conteudo__texto{
+        font-size: 22px;
+    }
+    .cabecalho{
+        margin: 0;
+    }
+    .redes{
+        margin-bottom: 5em;
+        
+    }
+    .redes a{
+        transition: all 0.4s ease;
+    }
+    .redes a:hover{
+        transform: translateY(-10px);
+    }
+    .conteudo__about{
+        width: 100%;
+    }
+    .conteudo__sobre{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .about__imagem{
+        width: 30%;
+    }
+    .projetos{
+        width: 99%;
+        
+        
+       }
+       .projetos__imagem{
+        width: 100%;
+       }
+       .projetos__container{
+        margin-bottom: 2em;
+       }
+       .conteudo__projetos{
+        display: grid; 
+        grid-template-areas:
+        "item1 item2 item3";
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+       }
+       .port{
+        grid-area: item1;
+       }
+       .book{
+        grid-area: item2;
+       }
+       .cast{
+        grid-area: item3;
+       }
+    }
